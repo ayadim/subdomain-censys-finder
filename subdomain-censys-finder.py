@@ -47,7 +47,7 @@ def filter_subdomains(domain, subdomains):
 if __name__ == "__main__":
 
   if len(sys.argv) != 2:
-      print("python censysSubdomainFinder.py target.com")
+      print("python subdomain-censys-finder.py target.com")
       sys.exit(1)
   api_id="" #change here
   api_secret="" #change here
