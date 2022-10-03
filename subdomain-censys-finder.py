@@ -17,6 +17,7 @@ from censys.search import CensysCertificates
 import sys
 
 
+
 def getSubdomains(domainTarget,apiId,apiSecret):
   c = CensysCertificates(api_id=apiId,api_secret=apiSecret)
   domain=domainTarget
@@ -46,11 +47,16 @@ def filter_subdomains(domain, subdomains):
 
 if __name__ == "__main__":
 
+  #Check if the input command is correct
   if len(sys.argv) != 2:
       print("python subdomain-censys-finder.py target.com")
       sys.exit(1)
+
+  #API KEY       
   api_id="" #change here
   api_secret="" #change here
+
+  #Start the script
   domain = sys.argv[1]
   subdomains = getSubdomains(domain,api_id,api_secret)
   subdomains = filter_subdomains(domain,subdomains)
