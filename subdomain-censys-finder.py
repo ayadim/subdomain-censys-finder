@@ -17,7 +17,6 @@ from censys.search import CensysCertificates
 import sys
 
 
-
 def getSubdomains(domainTarget,apiId,apiSecret):
   c = CensysCertificates(api_id=apiId,api_secret=apiSecret)
   domain=domainTarget
