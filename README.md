@@ -9,5 +9,4 @@ censys subdomain enumeration
 
     How it works 
     1- you should have an API-key,api-secret for censys 
-    2-install dependencies : pip install -r requirements.txt
-    3- python3 subdomain-censys-finder.py domain.com
+    2- python3 subdomain-censys-finder.py domain.com
